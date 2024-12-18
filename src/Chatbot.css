@@ -295,7 +295,18 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   color: white;
   border: none;
   border-radius: 50%;
