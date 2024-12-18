@@ -28,7 +28,7 @@ const Chatbot = () => {
         { text: "Hello! How can I assist you today?", sender: "bot" },
       ]);
       // Simulate a connection to the backend after the greeting message
-      handleSendMessage("init");
+      //handleSendMessage("init");
     }
   }, [isOpen]);
 
@@ -152,9 +152,9 @@ const Chatbot = () => {
       {isOpen ? (
         <div className="chatbot-container">
           <div className="chatbot-header">
-            Chatbot
+            Abdul
             <button className="close-button" onClick={() => setIsOpen(false)}>
-              X
+              ✖️
             </button>
           </div>
           <div className="chatbot-messages">
@@ -214,7 +214,12 @@ const Chatbot = () => {
               placeholder="Type a message..."
               disabled={isTextFieldDisabled}
             />
-            <button onClick={handleSendMessage} disabled={isTextFieldDisabled}>
+            {/* <button class="button-85" role="button">Button 85</button> */}
+            <button
+              className="button-85"
+              onClick={handleSendMessage}
+              disabled={isTextFieldDisabled}
+            >
               Send
             </button>
           </div>
