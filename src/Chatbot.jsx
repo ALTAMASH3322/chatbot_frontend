@@ -32,6 +32,9 @@ const Chatbot = () => {
     }
   }, [isOpen]);
 
+  function Get_Message() {
+    handleSendMessage(input);
+  }
   const handleSendMessage = async (message = input) => {
     if (message.trim() === "") return;
 
@@ -217,7 +220,8 @@ const Chatbot = () => {
             {/* <button class="button-85" role="button">Button 85</button> */}
             <button
               className="button-85"
-              onClick={handleSendMessage}
+              type="button"
+              onClick={Get_Message}
               disabled={isTextFieldDisabled}
             >
               Send
